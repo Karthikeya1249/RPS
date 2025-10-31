@@ -1,4 +1,4 @@
 function hello(){
-    return "hello"
+    return "hello world"
 }
 console.log(hello())
