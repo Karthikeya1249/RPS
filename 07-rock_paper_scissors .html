@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock paper Scissors</title>
+    </head>
+<body>
+<p>Rock paper Scissors</p>
+<!--********************ROCK*****************************-->
+<button onclick="
+playgame('rock');
+">Rock</button>
+
+<!--*************************PAPER*****************************-->
+<button onclick="
+playgame('paper');
+">Paper</button>
+<!--**************************SCISSORS********************************-->
+<button onclick=" 
+playgame('scissors'); 
+" >Scissors</button>
+<!--******************************SCRIPT************************************-->
+<script>
+    function playgame(pmove){
+
+        const cM=pick();
+        let result='';
+        console.log(cM);
+        if (pmove==='scissors'){
+            if (cM === 'rock'){
+            result='you lose';
+            }
+            else if (cM === 'paper'){
+                result='you win';
+            }
+            else if(cM==='Scissors'){
+                result='tie';
+            }
+        }
+
+
+        else if (pmove==='paper'){
+            if (cM === 'rock'){
+                result='you win';
+                }
+            else if (cM === 'paper'){
+                result='tie';
+            }
+            else if(cM==='Scissors'){
+                result='you lose';
+            }
+        }
+            
+
+
+        else if (pmove==="rock"){
+            if (cM === 'rock'){
+                result='Tie';
+                }
+            else if (cM === 'paper'){
+                result='you lose';
+            }
+            else if(cM==='Scissors'){
+                result='you won';
+            }
+        }
+        alert(`you picked ${pmove}. Computer picked ${cM}.${result}`);
+    }
+
+    function pick(){
+
+        const rN=(Math.random());
+        let cM='';
+        if (0<=rN && rN<1/3){
+            cM=('rock');
+        }
+        else if (1/3<=rN && rN<2/3){
+            cM=('paper');
+        }
+        else if (rN>=2/3 && rN<1) {
+            cM=('Scissors');
+        }
+        return cM;
+    }
+
+</script>
+
+</body>
+</html>

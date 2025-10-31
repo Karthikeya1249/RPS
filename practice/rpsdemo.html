@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo</title>
+    </head>
+    <body>
+        <p>This is a demo Page of rock paper scissors</p>
+<!---------------------------------------------------Rock------------------------------------------------------------->
+        <button onclick="
+        
+        const cmove=func();
+        
+        let result='';
+
+        console.log(cmove);
+
+        if (cmove==='rock'){
+                result='tie';
+        }
+        else if(cmove==='paper'){
+                result='lose'
+        }
+        else if(cmove==='scissors'){
+                result='win'
+        }
+        alert(`you have picked Rock. computer has picked ${cmove}. ${result}`)
+
+        
+        ">Rock</button>
+
+
+
+
+<!---------------------------------------------------Paper------------------------------------------------------------->
+        <button onclick="
+        const cmove=func();
+        let result='';
+
+        console.log(cmove);
+
+        if (cmove==='rock'){
+                result='win';
+        }
+        else if(cmove==='paper'){
+                result='tie'
+        }
+        else if(cmove==='scissors'){
+                result='lose'
+        }
+        alert(`you have picked Paper. computer has picked ${cmove}. ${result}`)
+        
+        ">Paper</button>
+
+
+
+
+
+
+<!---------------------------------------------------Scissor------------------------------------------------------------->
+        <button onclick="
+        const cmove=func();
+        let result='';
+
+        console.log(cmove);
+
+        if (cmove==='rock'){
+                result='lose';
+        }
+        else if(cmove==='paper'){
+                result='win'
+        }
+        else if(cmove==='scissors'){
+                result='tie'
+        }
+        alert(`you have picked Scissors. computer has picked ${cmove}. ${result}`)
+        
+        ">Scisssor</button>
+
+
+
+
+
+<!---------------------------------------------------Script------------------------------------------------------------->
+    <script>
+        function func(){
+                let cmove=Math.random();
+                if (cmove>=0 && cmove<1/3){
+                cmove='rock';
+                }
+                else if (cmove>=1/3 && cmove<2/3){
+                        cmove='paper';
+                }
+                else if (cmove>=2/3 && cmove<=1){
+                        cmove='scissors';
+                }
+                return cmove;
+        }
+    </script>
+    </body>
+</html>

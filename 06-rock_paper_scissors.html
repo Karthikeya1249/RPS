@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock paper Scissors</title>
+    </head>
+<body>
+<p>Rock paper Scissors</p>
+<button onclick="
+const rN=(Math.random());
+let cM='';
+let result='';
+
+if (0<=rN && rN<1/3){
+    cM=('rock');
+}
+else if (1/3<=rN && rN<2/3){
+    cM=('paper');
+}
+else if (rN>=2/3 && rN<1) {
+    cM=('Scissors');
+}
+console.log(cM);
+if (cM === 'rock'){
+    result='Tie';
+    }
+else if (cM === 'paper'){
+    result='you lose';
+}
+else if(cM==='Scissors'){
+    result='you won';
+}
+alert(`you picked rock. Computer picked ${cM}.${result}`)
+">Rock</button>
+
+
+<button onclick="
+const rN=(Math.random());
+let cM='';
+let result='';
+
+if (0<=rN && rN<1/3){
+    cM=('rock');
+}
+else if (1/3<=rN && rN<2/3){
+    cM=('paper');
+}
+else if (rN>=2/3 && rN<1) {
+    cM=('Scissors');
+}
+console.log(cM);
+if (cM === 'rock'){
+    result='you win';
+    }
+else if (cM === 'paper'){
+    result='tie';
+}
+else if(cM==='Scissors'){
+    result='you lose';
+}
+alert(`you picked paper. Computer picked ${cM}.${result}`)
+">Paper</button>
+<button onclick=" 
+const rN=(Math.random());
+let cM='';
+let result='';
+
+if (0<=rN && rN<1/3){
+    cM=('rock');
+}
+else if (1/3<=rN && rN<2/3){
+    cM=('paper');
+}
+else if (rN>=2/3 && rN<1) {
+    cM=('Scissors');
+}
+console.log(cM);
+if (cM === 'rock'){
+    result='you lose';
+    }
+else if (cM === 'paper'){
+    result='you win';
+}
+else if(cM==='Scissors'){
+    result='tie';
+}
+(`you picked Scissors. Computer picked ${cM}.${result}`)
+" >Scissors</button>
+
+<script>
+
+
+</script>
+
+</body>
+</html>
